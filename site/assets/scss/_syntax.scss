@@ -121,14 +121,14 @@
   .language-bash,
   .language-sh {
     .line::before {
-      color: #777;
+      color: var(--base03);
       content: "$ ";
       user-select: none;
     }
   }
 
   .language-powershell::before {
-    color: #009;
+    color: var(--base0C);
     content: "PM> ";
     user-select: none;
   }
