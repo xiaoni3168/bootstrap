@@ -6,6 +6,39 @@
 $theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value") !default;
 // scss-docs-end theme-colors-rgb
 
+$theme-colors-text: (
+  "primary": $primary-text,
+  "secondary": $secondary-text,
+  "success": $success-text,
+  "info": $info-text,
+  "warning": $warning-text,
+  "danger": $danger-text,
+  "light": $light-text,
+  "dark": $dark-text,
+) !default;
+
+$theme-colors-bg-subtle: (
+  "primary": $primary-bg-subtle,
+  "secondary": $secondary-bg-subtle,
+  "success": $success-bg-subtle,
+  "info": $info-bg-subtle,
+  "warning": $warning-bg-subtle,
+  "danger": $danger-bg-subtle,
+  "light": $light-bg-subtle,
+  "dark": $dark-bg-subtle,
+) !default;
+
+$theme-colors-border-subtle: (
+  "primary": $primary-border-subtle,
+  "secondary": $secondary-border-subtle,
+  "success": $success-border-subtle,
+  "info": $info-border-subtle,
+  "warning": $warning-border-subtle,
+  "danger": $danger-border-subtle,
+  "light": $light-border-subtle,
+  "dark": $dark-border-subtle,
+) !default;
+
 // Utilities maps
 //
 // Extends the default `$theme-colors` maps to help create our utilities.

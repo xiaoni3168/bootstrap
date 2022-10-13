@@ -22,37 +22,22 @@
     --#{$prefix}#{$color}-rgb: #{$value};
   }
 
+  @each $color, $value in $theme-colors-text {
+    --#{$prefix}#{$color}-text: #{$value};
+  }
+
+  @each $color, $value in $theme-colors-bg-subtle {
+    --#{$prefix}#{$color}-bg-subtle: #{$value};
+  }
+
+  @each $color, $value in $theme-colors-border-subtle {
+    --#{$prefix}#{$color}-border-subtle: #{$value};
+  }
+
   --#{$prefix}white-rgb: #{to-rgb($white)};
   --#{$prefix}black-rgb: #{to-rgb($black)};
   --#{$prefix}body-color-rgb: #{to-rgb($body-color)};
   --#{$prefix}body-bg-rgb: #{to-rgb($body-bg)};
-
-  --#{$prefix}primary-text: #{$primary-text};
-  --#{$prefix}secondary-text: #{$secondary-text};
-  --#{$prefix}success-text: #{$success-text};
-  --#{$prefix}info-text: #{$info-text};
-  --#{$prefix}warning-text: #{$warning-text};
-  --#{$prefix}danger-text: #{$danger-text};
-  --#{$prefix}light-text: #{$light-text};
-  --#{$prefix}dark-text: #{$dark-text};
-
-  --#{$prefix}primary-bg-subtle: #{$primary-bg-subtle};
-  --#{$prefix}secondary-bg-subtle: #{$secondary-bg-subtle};
-  --#{$prefix}success-bg-subtle: #{$success-bg-subtle};
-  --#{$prefix}info-bg-subtle: #{$info-bg-subtle};
-  --#{$prefix}warning-bg-subtle: #{$warning-bg-subtle};
-  --#{$prefix}danger-bg-subtle: #{$danger-bg-subtle};
-  --#{$prefix}light-bg-subtle: #{$light-bg-subtle};
-  --#{$prefix}dark-bg-subtle: #{$dark-bg-subtle};
-
-  --#{$prefix}primary-border-subtle: #{$primary-border-subtle};
-  --#{$prefix}secondary-border-subtle: #{$secondary-border-subtle};
-  --#{$prefix}success-border-subtle: #{$success-border-subtle};
-  --#{$prefix}info-border-subtle: #{$info-border-subtle};
-  --#{$prefix}warning-border-subtle: #{$warning-border-subtle};
-  --#{$prefix}danger-border-subtle: #{$danger-border-subtle};
-  --#{$prefix}light-border-subtle: #{$light-border-subtle};
-  --#{$prefix}dark-border-subtle: #{$dark-border-subtle};
 
   // Fonts
 
