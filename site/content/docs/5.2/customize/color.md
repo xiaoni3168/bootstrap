@@ -29,7 +29,7 @@ Colors ending in `-rgb` provide the `red, green, blue` values for use in `rgb()`
   <tbody>
     <tr>
       <td rowspan="2">
-        <strong>Body —</strong> Default foreground (color) and background, including components.
+        {{< markdown >}}**Body —** Default foreground (color) and background, including components.{{< /markdown >}}
       </td>
       <td class="ps-0">
         <div class="p-3 rounded-2" style="background-color: var(--bs-body-color);">&nbsp;</div>
@@ -48,7 +48,7 @@ Colors ending in `-rgb` provide the `red, green, blue` values for use in `rgb()`
     </tr>
     <tr>
       <td rowspan="2">
-        <strong>Secondary —</strong> For disabled component states, dividers, and lighter text.
+        {{< markdown >}}**Secondary —** For disabled component states, dividers, and lighter text.{{< /markdown >}}
       </td>
       <td class="ps-0">
         <div class="p-3 rounded-2" style="background-color: var(--bs-secondary-color);">&nbsp;</div>
@@ -67,7 +67,7 @@ Colors ending in `-rgb` provide the `red, green, blue` values for use in `rgb()`
     </tr>
     <tr>
       <td rowspan="2">
-        <strong>Tertiary —</strong> For component hover colors, accents, wells, and text.
+        {{< markdown >}}**Tertiary —** For component hover colors, accents, wells, and text.{{< /markdown >}}
       </td>
       <td class="ps-0">
         <div class="p-3 rounded-2" style="background-color: var(--bs-tertiary-color);">&nbsp;</div>
@@ -86,7 +86,7 @@ Colors ending in `-rgb` provide the `red, green, blue` values for use in `rgb()`
     </tr>
     <tr>
       <td>
-        <strong>Emphasis —</strong> For higher contrast text. Not applicable for backgrounds.
+        {{< markdown >}}**Emphasis —** For higher contrast text. Not applicable for backgrounds.{{< /markdown >}}
       </td>
       <td class="ps-0">
         <div class="p-3 rounded-2" style="background-color: var(--bs-emphasis-color);">&nbsp;</div>
@@ -97,7 +97,7 @@ Colors ending in `-rgb` provide the `red, green, blue` values for use in `rgb()`
     </tr>
     <tr>
       <td>
-        <strong>Border —</strong> {{< markdown >}}For component borders, dividers, and rules. Use `--bs-border-color-translucent` to blend with backgrounds with an `rgba()` value.{{< /markdown >}}
+        {{< markdown >}}**Border —** For component borders, dividers, and rules. Use `--bs-border-color-translucent` to blend with backgrounds with an `rgba()` value.{{< /markdown >}}
       </td>
       <td class="ps-0">
         <div class="p-3 rounded-2" style="background-color: var(--bs-border-color);">&nbsp;</div>
@@ -108,7 +108,7 @@ Colors ending in `-rgb` provide the `red, green, blue` values for use in `rgb()`
     </tr>
     <tr>
       <td rowspan="4">
-        <strong>Primary —</strong> Main theme color, used for hyperlinks, focus styles, and component and form active states.
+        {{< markdown >}}**Primary —** Main theme color, used for hyperlinks, focus styles, and component and form active states.{{< /markdown >}}
       </td>
       <td class="ps-0">
         <div class="p-3 rounded-2 text-bg-primary">Primary</div>
@@ -143,7 +143,7 @@ Colors ending in `-rgb` provide the `red, green, blue` values for use in `rgb()`
     </tr>
     <tr>
       <td rowspan="4">
-        <strong>Success —</strong> Theme color used for positive or successful actions and information.
+        {{< markdown >}}**Success —** Theme color used for positive or successful actions and information.{{< /markdown >}}
       </td>
       <td class="ps-0">
         <div class="p-3 rounded-2 text-bg-success">Success</div>
@@ -178,7 +178,7 @@ Colors ending in `-rgb` provide the `red, green, blue` values for use in `rgb()`
     </tr>
     <tr>
       <td rowspan="4">
-        <strong>Danger —</strong> Theme color used for errors and dangerous actions.
+        {{< markdown >}}**Danger —** Theme color used for errors and dangerous actions.{{< /markdown >}}
       </td>
       <td class="ps-0">
         <div class="p-3 rounded-2 text-bg-danger">Danger</div>
@@ -213,7 +213,7 @@ Colors ending in `-rgb` provide the `red, green, blue` values for use in `rgb()`
     </tr>
     <tr>
       <td rowspan="4">
-        <strong>Warning —</strong> Theme color used for non-destructive warning messages.
+        {{< markdown >}}**Warning —** Theme color used for non-destructive warning messages.{{< /markdown >}}
       </td>
       <td class="ps-0">
         <div class="p-3 rounded-2 text-bg-warning">Warning</div>
@@ -248,7 +248,7 @@ Colors ending in `-rgb` provide the `red, green, blue` values for use in `rgb()`
     </tr>
     <tr>
       <td rowspan="4">
-        <strong>Info —</strong> Theme color used for neutral and informative content.
+        {{< markdown >}}**Info —** Theme color used for neutral and informative content.{{< /markdown >}}
       </td>
       <td class="ps-0">
         <div class="p-3 rounded-2 text-bg-info">Info</div>
@@ -283,7 +283,7 @@ Colors ending in `-rgb` provide the `red, green, blue` values for use in `rgb()`
     </tr>
     <tr>
       <td rowspan="4">
-        <strong>Light —</strong> Additional theme option for less contrasting colors.
+        {{< markdown >}}**Light —** Additional theme option for less contrasting colors.{{< /markdown >}}
       </td>
       <td class="ps-0">
         <div class="p-3 rounded-2 text-bg-light border">Light</div>
@@ -318,7 +318,7 @@ Colors ending in `-rgb` provide the `red, green, blue` values for use in `rgb()`
     </tr>
     <tr>
       <td rowspan="4">
-        <strong>Dark —</strong> Additional theme option for higher contrasting colors.
+        {{< markdown >}}**Dark —** Additional theme option for higher contrasting colors.{{< /markdown >}}
       </td>
       <td class="ps-0">
         <div class="p-3 rounded-2 text-bg-dark border">Dark</div>
