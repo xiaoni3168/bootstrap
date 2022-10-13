@@ -1125,8 +1125,8 @@ $nav-tabs-link-active-bg:           var(--#{$prefix}body-bg) !default;
 $nav-tabs-link-active-border-color: var(--#{$prefix}border-color) var(--#{$prefix}border-color) $nav-tabs-link-active-bg !default;
 
 $nav-pills-border-radius:           $border-radius !default;
-$nav-pills-link-active-color:       var(--#{$prefix}accent-color) !default;
-$nav-pills-link-active-bg:          var(--#{$prefix}accent-bg) !default;
+$nav-pills-link-active-color:       $component-active-color !default;
+$nav-pills-link-active-bg:          $component-active-bg !default;
 // scss-docs-end nav-variables
 
 
@@ -1258,9 +1258,9 @@ $pagination-hover-color:            var(--#{$prefix}link-hover-color) !default;
 $pagination-hover-bg:               var(--#{$prefix}tertiary-bg) !default;
 $pagination-hover-border-color:     var(--#{$prefix}border-color) !default; // Todo in v6: remove this?
 
-$pagination-active-color:           var(--#{$prefix}accent-color) !default;
-$pagination-active-bg:              var(--#{$prefix}accent-bg) !default;
-$pagination-active-border-color:    var(--#{$prefix}accent-bg) !default;
+$pagination-active-color:           $component-active-color !default;
+$pagination-active-bg:              $component-active-bg !default;
+$pagination-active-border-color:    $component-active-bg !default;
 
 $pagination-disabled-color:         var(--#{$prefix}secondary-color) !default;
 $pagination-disabled-bg:            var(--#{$prefix}secondary-bg) !default;
