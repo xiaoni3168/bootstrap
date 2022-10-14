@@ -9,7 +9,7 @@
 
     &:hover,
     &:focus {
-      color: var(--bs-primary);
+      color: var(--bs-link-hover-color);
       text-decoration: underline;
     }
   }
