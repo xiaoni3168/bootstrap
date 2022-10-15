@@ -17,15 +17,23 @@ toc: true
 
 - New extended color system. We've added new theme colors (but not in `$theme-colors)`) for a more nuanced, system-wide color palette with new secondary, tertiary, and emphasis colors for `color` and `background-color`. These new colors are available as Sass variables, CSS variables, and utilities.
 
+- Relatedly, we've expanded our theme color Sass variables, CSS variables, and utilities to include text emphasis, subtle background colors, and subtle border colors.
+
 - Adds new `_variables-dark.scss` stylesheet to house dark-mode specific overrides.
 
 ### CSS variables
 
 - Restores CSS variables for breakpoints, though we don't use them in our media queries as they're not supported. However, these can be useful in JS-specific contexts.
 
+- Per the color modes update, we've added new utilities for Adds new Sass CSS variables `secondary` and `tertiary` text and background colors, plus `{color}-bg-subtle`, `{color}-border-subtle`, and `{color}-text` for our theme colors. These new colors are available through Sass and CSS variables (but not our color maps) with the express goal of making it easier to customize across multiple colors modes like light and dark.
+
 - Adds additional variables for alerts, `.btn-close`, and `.offcanvas`.
 
 ### Utilities
+
+- <span class="badge text-warning-emphasis bg-warning-subtle">Deprecated</span> `.text-muted` will be be replaced by `.text-body-secondary` in v6.
+
+  With the addition of the expanded theme colors and variables, the `.text-muted` variables and utility have been deprecated with v5.3.0. Its default value has also has been reassigned to the new `--bs-secondary-color` CSS variable to better support color modes. It will be removed in v6.0.0.
 
 - Adds new `.overflow-x`, `.overflow-y`, and several `.object-fit-*` utilities. _The object-fit property is used to specify how an `<img>` or `<video>` should be resized to fit its container. Offers a responsive alternative to using `background-image` for a resizable fill/fit image._
 
