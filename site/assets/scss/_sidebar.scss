@@ -53,7 +53,7 @@
   &:hover,
   &:focus,
   &.active {
-    color: var(--bs-heading-color);
+    color: var(--bs-emphasis-color);
     text-decoration: if($link-hover-decoration == underline, none, null);
     background-color: var(--bd-sidebar-link-bg);
   }

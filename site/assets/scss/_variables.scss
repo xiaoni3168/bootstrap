@@ -24,5 +24,6 @@ $bd-callout-variants: info, warning, danger !default;
 }
 
 [data-bs-theme="dark"] {
-  --bd-violet: #{mix($bd-violet, $black, 75%)};
+  --bd-violet: #{mix($bd-violet, $white, 75%)};
+  --bd-sidebar-link-bg: rgba(#{to-rgb(mix($bd-violet, $black, 75%))}, .5);
 }
