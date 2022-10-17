@@ -17,7 +17,7 @@ toc: true
 
 - New extended color system. We've added new theme colors (but not in `$theme-colors)`) for a more nuanced, system-wide color palette with new secondary, tertiary, and emphasis colors for `color` and `background-color`. These new colors are available as Sass variables, CSS variables, and utilities.
 
-- Relatedly, we've expanded our theme color Sass variables, CSS variables, and utilities to include text emphasis, subtle background colors, and subtle border colors.
+- We've also expanded our theme color Sass variables, CSS variables, and utilities to include text emphasis, subtle background colors, and subtle border colors.
 
 - Adds new `_variables-dark.scss` stylesheet to house dark-mode specific overrides.
 
