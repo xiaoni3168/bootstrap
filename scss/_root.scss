@@ -116,7 +116,7 @@
   }
 }
 
-[data-bs-theme="dark"] {
+@include color-mode(dark) {
   // scss-docs-start root-darkmode-colors
   --#{$prefix}body-color: #{$body-color-dark};
   --#{$prefix}body-color-rgb: #{to-rgb($body-color-dark)};

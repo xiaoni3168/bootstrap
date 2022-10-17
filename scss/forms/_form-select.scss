@@ -73,7 +73,7 @@
 }
 
 @if $enable-dark-mode {
-  [data-bs-theme="dark"] {
+  @include color-mode(dark) {
     .form-select {
       --#{$prefix}form-select-bg: #{escape-svg($form-select-indicator-dark)};
     }
