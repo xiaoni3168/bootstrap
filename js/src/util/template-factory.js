@@ -7,7 +7,7 @@
 
 import { DefaultAllowlist, sanitizeHtml } from './sanitizer'
 import { execute, getElement, isElement } from '../util/index'
-import { SelectorEngine } from '../dom/selector-engine'
+import SelectorEngine from '../dom/selector-engine'
 import Config from './config'
 
 /**

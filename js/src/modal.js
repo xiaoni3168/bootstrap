@@ -7,7 +7,7 @@
 
 import { defineJQueryPlugin, isRTL, isVisible, reflow } from './util/index'
 import EventHandler from './dom/event-handler'
-import { getElementFromSelector, SelectorEngine } from './dom/selector-engine'
+import SelectorEngine from './dom/selector-engine'
 import ScrollBarHelper from './util/scrollbar'
 import BaseComponent from './base-component'
 import Backdrop from './util/backdrop'
@@ -336,7 +336,7 @@ class Modal extends BaseComponent {
  */
 
 EventHandler.on(document, EVENT_CLICK_DATA_API, SELECTOR_DATA_TOGGLE, function (event) {
-  const target = getElementFromSelector(this)
+  const target = SelectorEngine.getElementFromSelector(this)
 
   if (['A', 'AREA'].includes(this.tagName)) {
     event.preventDefault()

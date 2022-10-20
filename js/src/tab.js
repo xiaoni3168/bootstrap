@@ -7,7 +7,7 @@
 
 import { defineJQueryPlugin, getNextActiveElement, isDisabled } from './util/index'
 import EventHandler from './dom/event-handler'
-import { getElementFromSelector, SelectorEngine } from './dom/selector-engine'
+import SelectorEngine from './dom/selector-engine'
 import BaseComponent from './base-component'
 
 /**
@@ -106,7 +106,7 @@ class Tab extends BaseComponent {
 
     element.classList.add(CLASS_NAME_ACTIVE)
 
-    this._activate(getElementFromSelector(element)) // Search and activate/show the proper section
+    this._activate(SelectorEngine.getElementFromSelector(element)) // Search and activate/show the proper section
 
     const complete = () => {
       if (element.getAttribute('role') !== 'tab') {
@@ -133,7 +133,7 @@ class Tab extends BaseComponent {
     element.classList.remove(CLASS_NAME_ACTIVE)
     element.blur()
 
-    this._deactivate(getElementFromSelector(element)) // Search and deactivate the shown section too
+    this._deactivate(SelectorEngine.getElementFromSelector(element)) // Search and deactivate the shown section too
 
     const complete = () => {
       if (element.getAttribute('role') !== 'tab') {
@@ -203,7 +203,7 @@ class Tab extends BaseComponent {
   }
 
   _setInitialAttributesOnTargetPanel(child) {
-    const target = getElementFromSelector(child)
+    const target = SelectorEngine.getElementFromSelector(child)
 
     if (!target) {
       return
