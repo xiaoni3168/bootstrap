@@ -88,8 +88,10 @@ class FocusTrap extends Config {
   _handleFocusin(event) {
     const { trapElement } = this._config
 
-    if (event.target === document || event.target === trapElement || trapElement.contains(event.target)) {
-      return
+    if (!Boolean(trapElement.getAttribute("focusable"))) {
+      if (event.target === document || event.target === trapElement || trapElement.contains(event.target)) {
+        return
+      }
     }
 
     const elements = SelectorEngine.focusableChildren(trapElement)

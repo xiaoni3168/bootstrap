@@ -1,5 +1,5 @@
 /*!
-  * Bootstrap v5.2.2 (https://getbootstrap.com/)
+  * Bootstrap v5.2.3 (https://getbootstrap.com/)
   * Copyright 2011-2022 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
   */
@@ -2745,8 +2745,10 @@ class FocusTrap extends Config {
       trapElement
     } = this._config;
 
-    if (event.target === document || event.target === trapElement || trapElement.contains(event.target)) {
-      return;
+    if (!Boolean(trapElement.getAttribute("focusable"))) {
+      if (event.target === document || event.target === trapElement || trapElement.contains(event.target)) {
+        return;
+      }
     }
 
     const elements = SelectorEngine.focusableChildren(trapElement);
